@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Elios | Solutions numériques sur-mesure</title>
+  <meta name="description" content="Découvrez tous les services : création de sites web, développement logiciel, automatisation, cybersécurité, accompagnement technique." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#071016}
+    html,body{height:100%;-webkit-font-smoothing:antialiased}
+    body{transition:opacity .42s cubic-bezier(.2,.9,.2,1);opacity:1}
+    body.page-exit{opacity:0;pointer-events:none}
+    .veil{position:fixed;inset:0;pointer-events:none;background:rgba(0,0,0,1);transition:opacity .42s cubic-bezier(.2,.9,.2,1);z-index:0}
+    body > *:not(.veil){position:relative;z-index:1}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="veil" aria-hidden="true"></div>
+  <header class="header container">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Elios" class="logo" width="36" height="36">Elios</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="portfolio.html">Projets</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>🛠️ Mes services sur-mesure</h1>
+    <p class="services-intro">Des solutions haut de gamme, pensées pour la performance, la sécurité et l’image professionnelle.<br>Chaque prestation est personnalisée selon vos besoins et votre secteur.</p>
+
+    <div class="services-cards">
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h2>Création de sites web</h2>
+        <ul>
+          <li>Sites vitrines professionnels</li>
+          <li>Interfaces modernes et responsives</li>
+          <li>Mise en ligne clé en main</li>
+          <li>Sécurité intégrée dès la conception</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h2>Développement logiciel</h2>
+        <ul>
+          <li>Applications métiers sur-mesure</li>
+          <li>Outils efficaces et évolutifs</li>
+          <li>Automatisations pour gagner du temps</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔐</div>
+        <h2>Conseils en cybersécurité</h2>
+        <ul>
+          <li>Protection des données</li>
+          <li>Recommandations adaptées</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <h2>Accompagnement informatique</h2>
+        <ul>
+          <li>Analyse des besoins</li>
+          <li>Conseils techniques personnalisés</li>
+          <li>Maintenance et support</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="services-engagement">
+      <h3>✨ Mon engagement qualité</h3>
+      <ul>
+        <li>Transparence, pédagogie et accompagnement</li>
+        <li>Respect des délais et du budget</li>
+        <li>Design premium, sécurité et performance</li>
+      </ul>
+    </section>
+
+    <div class="cta" style="margin-top:2.5rem">
+      <a class="btn" href="contact.html">Demander un devis personnalisé</a>
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="cols">
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:ekipppp006@gmail.com">ekipppp006@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <div class="links">
+          <a href="droits.html">Tous droits réservés</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:1rem;color:var(--muted);font-size:.9rem;text-align:center;width:100%">&copy; 2026 Elios</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

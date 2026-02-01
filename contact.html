@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Elios | Demander un devis ou un conseil</title>
+  <meta name="description" content="Contact direct pour discuter de votre projet, obtenir un devis ou des conseils en développement web, logiciel et cybersécurité." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#071016}
+    html,body{height:100%;-webkit-font-smoothing:antialiased}
+    body{transition:opacity .42s cubic-bezier(.2,.9,.2,1);opacity:1}
+    body.page-exit{opacity:0;pointer-events:none}
+    .veil{position:fixed;inset:0;pointer-events:none;background:rgba(0,0,0,1);transition:opacity .42s cubic-bezier(.2,.9,.2,1);z-index:0}
+    body > *:not(.veil){position:relative;z-index:1}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="veil" aria-hidden="true"></div>
+  <header class="header container">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Elios" class="logo" width="36" height="36">Elios</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Projets</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 style="text-align:center">📩 Contact</h1>
+    <div class="contact-intro" style="text-align:center;font-size:1.18rem;color:var(--muted);max-width:600px;margin:0 auto 2.5rem auto;line-height:1.7;background:linear-gradient(90deg,rgba(60,65,80,0.38),rgba(30,32,40,0.62));border-radius:16px;padding:1.5rem 1rem 1.2rem 1rem;box-shadow:0 4px 24px rgba(0,0,0,0.10);">
+      <span style="font-size:1.08em;color:var(--text)">Vous souhaitez donner vie à un projet informatique, avez un besoin spécifique ou cherchez des conseils en cybersécurité&nbsp;?</span><br>
+      <span style="color:var(--muted)">Je suis à votre écoute pour échanger, vous conseiller et vous proposer une solution sur-mesure, adaptée à vos objectifs.</span>
+    </div>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <h2>Email direct</h2>
+        <p><a href="mailto:ekipppp006@gmail.com">ekipppp006@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="cta" style="justify-content:center;margin-top:2.5rem">
+      <a class="btn" href="mailto:ekipppp006@gmail.com">Discuter de mon projet</a>
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="cols">
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:ekipppp006@gmail.com">ekipppp006@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <div class="links">
+          <a href="droits.html">Tous droits réservés</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:1rem;color:var(--muted);font-size:.9rem;text-align:center;width:100%">&copy; 2026 Elios</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

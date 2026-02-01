@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tarifs — Elios | Prix sites & logiciels</title>
+  <meta name="description" content="Tarifs clairs pour sites vitrines, e-commerce, logiciels d’automatisation, refonte et optimisation. Devis personnalisé sur demande." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#071016}
+    html,body{height:100%;-webkit-font-smoothing:antialiased}
+    body{transition:opacity .42s cubic-bezier(.2,.9,.2,1);opacity:1}
+    body.page-exit{opacity:0;pointer-events:none}
+    .veil{position:fixed;inset:0;pointer-events:none;background:rgba(0,0,0,1);transition:opacity .42s cubic-bezier(.2,.9,.2,1);z-index:0}
+    body > *:not(.veil){position:relative;z-index:1}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="veil" aria-hidden="true"></div>
+  <header class="header container">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Elios" class="logo" width="36" height="36">Elios</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Projets</a>
+      <a href="tarifs.html" class="active">Tarifs</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 style="text-align:center">💎 Tarifs</h1>
+    <p class="tarifs-intro" style="text-align:center;font-size:1.15rem;color:var(--muted);max-width:600px;margin:0 auto 2.5rem auto;">Transparence, jalons clairs, options modulaires. Chaque projet fait l’objet d’un devis personnalisé.</p>
+    <div class="tarifs-cards">
+      <div class="tarif-card">
+        <div class="tarif-icon">🌟</div>
+        <h2>Site Vitrine Premium</h2>
+        <p>À partir de 200€<br><span style="font-size:0.98em;color:var(--accent-2)">Design sur-mesure, jusqu'à 6 pages, responsive, optimisation, livraison clé en main.</span></p>
+      </div>
+      <div class="tarif-card">
+        <div class="tarif-icon">💡</div>
+        <h2>Refonte ou optimisation</h2>
+        <p>À partir de 100€<br><span style="font-size:0.98em;color:var(--accent-2)">Modernisation, amélioration, optimisation site internet, sécurité...</span></p>
+      </div>
+      <div class="tarif-card">
+        <div class="tarif-icon">🤖</div>
+        <h2>Logiciel d’automatisation</h2>
+        <p>À partir de 200€<br><span style="font-size:0.98em;color:var(--accent-2)">Outils sur-mesure pour automatiser vos tâches, gérer vos données ou vos événements, intégrations API, interface personnalisée.</span></p>
+      </div>
+    </div>
+    <div class="cta" style="justify-content:center;margin-top:2.5rem">
+      <a class="btn" href="mailto:ekipppp006@gmail.com">Demander un devis</a>
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="cols">
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:ekipppp006@gmail.com">ekipppp006@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <div class="links">
+          <a href="droits.html">Tous droits réservés</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:1rem;color:var(--muted);font-size:.9rem;text-align:center;width:100%">&copy; 2026 Elios</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

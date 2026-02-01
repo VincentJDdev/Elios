@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Elios | Réalisations web & logiciel</title>
+  <meta name="description" content="Exemples de sites vitrines, e-commerce et logiciels d’automatisation réalisés pour entreprises et associations." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#071016}
+    html,body{height:100%;-webkit-font-smoothing:antialiased}
+    body{transition:opacity .42s cubic-bezier(.2,.9,.2,1);opacity:1}
+    body.page-exit{opacity:0;pointer-events:none}
+    .veil{position:fixed;inset:0;pointer-events:none;background:rgba(0,0,0,1);transition:opacity .42s cubic-bezier(.2,.9,.2,1);z-index:0}
+    body > *:not(.veil){position:relative;z-index:1}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="veil" aria-hidden="true"></div>
+  <header class="header container">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Elios" class="logo" width="36" height="36">Elios</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Projets</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 style="text-align:center;margin-bottom:2.5rem;font-size:2rem;">Exemple de créations :</h1>
+      <div style="display:flex;justify-content:center;">
+              <div class="portfolio-row" style="display:flex;justify-content:center;">
+                <div class="portfolio-card" style="max-width:480px;width:100%;">
+                  <div class="portfolio-icon">🎯</div>
+                  <h2>Logiciel pour organisation sportive</h2>
+                    <ul style="list-style:none;padding:0;margin:0 0 0.5rem 0;font-size:1.08rem;line-height:1.7;text-align:left;">
+                      <li><strong>Développement d’un logiciel sur-mesure pour une association sportive de tir</strong></li>
+                      <li>Permet de calculer automatiquement la catégorie d’un participant selon son âge et son profil</li>
+                      <li>Objectif : gagner du temps et fiabiliser l’organisation des compétitions</li>
+                      <li>Technologies : JavaScript, HTML, CSS</li>
+                    </ul>
+                    <div class="gallery-photos">
+                      <img src="tir.png" alt="Capture d’écran du logiciel Tir – calcul automatique de catégorie" style="max-width:100%;border-radius:10px;margin-top:1rem;box-shadow:0 2px 12px rgba(0,0,0,0.18);">
+                    </div>
+                </div>
+                <div class="portfolio-card" style="max-width:480px;width:100%;margin-left:2.5rem;">
+                  <div class="portfolio-icon">💻</div>
+                  <h2>Site vitrine pour entreprise locale</h2>
+                  <ul style="list-style:none;padding:0;margin:0 0 0.5rem 0;font-size:1.08rem;line-height:1.7;text-align:left;">
+                    <li><strong>Création d’un site vitrine moderne et responsive</strong></li>
+                    <li>Valorisation de l’image de marque et amélioration de la visibilité en ligne</li>
+                    <li>Technologies : HTML, CSS, JavaScript</li>
+                  </ul>
+                  <div class="gallery-photos">
+                    <img src="clim.png" alt="Aperçu du site vitrine climatisation" style="max-width:100%;border-radius:10px;margin-top:1rem;box-shadow:0 2px 12px rgba(0,0,0,0.18);">
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="cols">
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:ekipppp006@gmail.com">ekipppp006@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <div class="links">
+          <a href="droits.html">Tous droits réservés</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:1rem;color:var(--muted);font-size:.9rem;text-align:center;width:100%">&copy; 2026 Elios</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

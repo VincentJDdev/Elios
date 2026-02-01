@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accueil — Elios | Création de sites & automatisation</title>
+  <meta name="description" content="Développeur web & logiciel : sites vitrines, e-commerce, automatisation, conseils cybersécurité. Solutions sur-mesure pour entreprises et associations." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Critical minimal styles to avoid flash between pages */
+    :root{--bg:#071016}
+    html,body{height:100%;-webkit-font-smoothing:antialiased}
+    /* match main CSS transition (.42s) for sync with JS */
+    body{transition:opacity .42s cubic-bezier(.2,.9,.2,1);opacity:1}
+    body.page-exit{opacity:0;pointer-events:none}
+    /* subtle veil to gently dim the background for easier reading */
+    .veil{position:fixed;inset:0;pointer-events:none;background:rgba(0,0,0,1);transition:opacity .42s cubic-bezier(.2,.9,.2,1);z-index:0}
+    body > *:not(.veil){position:relative;z-index:1}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="veil" aria-hidden="true"></div>
+  <header class="header container">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Logo Elios" class="logo" width="36" height="36">Elios</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Projets</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+                        <section class="elios-highlight" style="margin:2.5rem auto 2.5rem auto;max-width:800px;text-align:center">
+                          <div style="background:linear-gradient(90deg,rgba(60,65,80,0.88),rgba(30,32,40,0.98));border-radius:18px;box-shadow:0 8px 32px rgba(0,0,0,0.18);padding:2.2rem 1.5rem 1.7rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:1.1rem;">
+                            <img src="logo.png" alt="Logo Elios" style="height:54px;width:54px;margin-bottom:0.5rem;">
+                            <h2 style="color:var(--accent);margin:0 0 0.7rem 0;font-size:2rem;letter-spacing:1px;">Elios</h2>
+                            <p style="font-size:1.18rem;color:var(--accent-2);margin-bottom:0.7rem;">La nouvelle solution numérique pour les entrepreneurs et associations.</p>
+                            <p style="font-size:1.15rem;color:var(--muted);max-width:600px;margin:0 auto;">Elios est ma startup dédiée à la création de sites web, d’outils d’automatisation et de solutions numériques sur-mesure pour entrepreneurs, associations et PME. Innovation, écoute et accompagnement sont au cœur de chaque projet.</p>
+                          </div>
+                        </section>
+                    <section class="blog-actus" style="margin:3rem auto 2.5rem auto;max-width:800px;text-align:center">
+                      <h2 style="color:var(--accent);margin-bottom:1.5rem">Actualités & Conseils</h2>
+                      <div style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center">
+                        <div style="background:linear-gradient(180deg,rgba(60,65,80,0.78),rgba(30,32,40,0.92));border-radius:var(--radius);box-shadow:0 6px 32px rgba(0,0,0,0.18);padding:1.5rem 1.2rem;max-width:320px;flex:1 1 220px;">
+                          <h3 style="color:var(--accent-2)">Pourquoi un site responsive ?</h3>
+                          <p>Un site adapté à tous les écrans améliore l’expérience utilisateur et le référencement.</p>
+                          <span style="font-size:.98em;color:var(--accent-2)">Publié le 10/01/2026</span>
+                        </div>
+                        <div style="background:linear-gradient(180deg,rgba(60,65,80,0.78),rgba(30,32,40,0.92));border-radius:var(--radius);box-shadow:0 6px 32px rgba(0,0,0,0.18);padding:1.5rem 1.2rem;max-width:320px;flex:1 1 220px;">
+                          <h3 style="color:var(--accent-2)">Sécuriser son site web</h3>
+                          <p>Quelques bonnes pratiques : mots de passe forts, mises à jour régulières, sauvegardes…</p>
+                          <span style="font-size:.98em;color:var(--accent-2)">Publié le 02/01/2026</span>
+                        </div>
+                        <div style="background:linear-gradient(180deg,rgba(60,65,80,0.78),rgba(30,32,40,0.92));border-radius:var(--radius);box-shadow:0 6px 32px rgba(0,0,0,0.18);padding:1.5rem 1.2rem;max-width:320px;flex:1 1 220px;">
+                          <h3 style="color:var(--accent-2)">Nouveau projet lancé !</h3>
+                          <p>Découvrez la dernière réalisation : automatisation pour une association sportive.</p>
+                          <span style="font-size:.98em;color:var(--accent-2)">Publié le 25/12/2025</span>
+                        </div>
+                      </div>
+                    </section>
+                <section class="parcours-client" style="margin:3rem auto 2.5rem auto;max-width:800px;text-align:center">
+  <h2 style="color:var(--accent);margin-bottom:1.5rem">Votre parcours avec moi</h2>
+  <div class="home-cards" style="margin:0 auto 0 auto;max-width:900px;">
+    <div class="home-card">
+      <div class="home-icon">🤝</div>
+      <h2>Premier contact</h2>
+      <p>Échange sur vos besoins, conseils personnalisés et écoute active.</p>
+    </div>
+    <div class="home-card">
+      <div class="home-icon">📝</div>
+      <h2>Devis détaillé</h2>
+      <p>Proposition claire, transparente et adaptée à votre projet.</p>
+    </div>
+    <div class="home-card">
+      <div class="home-icon">🎨</div>
+      <h2>Conception & validation</h2>
+      <p>Maquettes, ajustements, validation étape par étape.</p>
+    </div>
+    <div class="home-card">
+      <div class="home-icon">💻</div>
+      <h2>Développement</h2>
+      <p>Réalisation technique, points d’étape réguliers, transparence totale.</p>
+    </div>
+    <div class="home-card">
+      <div class="home-icon">🚀</div>
+      <h2>Livraison & suivi</h2>
+      <p>Mise en ligne, formation, support et accompagnement après projet.</p>
+    </div>
+  </div>
+                </section>
+    <section id="hero">
+      <h1>Développeur informatique.  </h1>
+      <blockquote class="lead">Étudiant en BTS SIO option SLAM je conçois des sites web et des solutions logicielles sur mesure, tout en intégrant les bonnes pratiques de cybersécurité dès la conception. je propose des solutions informatiques fiables, performantes et adaptées aux besoins des particuliers, associations et petites structures.</blockquote>
+      <div class="cta">
+        <a class="btn" href="services.html">Voir mes services</a>
+        <a class="btn btn-outline" href="contact.html">Me contacter</a>
+      </div>
+    </section>
+
+    <div class="home-cards">
+      <div class="home-card">
+        <div class="home-icon">🌐</div>
+        <h2>Sites web premium</h2>
+        <p>Des sites modernes, rapides et sécurisés, adaptés à votre image.</p>
+      </div>
+      <div class="home-card">
+        <div class="home-icon">💻</div>
+        <h2>Logiciels sur-mesure</h2>
+        <p>Des outils métiers efficaces, évolutifs et pensés pour vos besoins.</p>
+      </div>
+      <div class="home-card">
+        <div class="home-icon">🔐</div>
+        <h2>Cybersécurité intégrée</h2>
+        <p>Protection des données et bonnes pratiques incluses dès la conception.</p>
+      </div>
+    </div>
+
+    <section id="home-projects" class="reveal-hidden" style="margin-top:2.5rem">
+      <h2>Derniers projets</h2>
+      <div class="home-projects-gallery">
+        <!-- Ajoute ici un aperçu de tes projets (max 3) :
+        <a href="portfolio.html" class="project-thumb">
+          <img src="images/mon-projet1.jpg" alt="Nom du projet 1" loading="lazy">
+          <span>Nom du projet 1</span>
+        </a>
+        <a href="portfolio.html" class="project-thumb">
+          <img src="images/mon-projet2.jpg" alt="Nom du projet 2" loading="lazy">
+          <span>Nom du projet 2</span>
+        </a>
+        -->
+        <div class="gallery-placeholder">Ajoute ici un aperçu de tes réalisations !</div>
+      </div>
+      <p style="margin-top:1rem"><a class="btn btn-ghost" href="portfolio.html">Voir tous les projets</a></p>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="cols">
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:ekipppp006@gmail.com">ekipppp006@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <div class="links">
+          <a href="droits.html">Tous droits réservés</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:1rem;color:var(--muted);font-size:.9rem;text-align:center;width:100%">&copy; 2026 Elios</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>À propos — Elios | Développeur web & logiciel</title>
+  <meta name="description" content="Présentation, mission, valeurs et compétences d’un développeur passionné par la création de solutions numériques fiables et sécurisées." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#071016}
+    html,body{height:100%;-webkit-font-smoothing:antialiased}
+    body{transition:opacity .42s cubic-bezier(.2,.9,.2,1);opacity:1}
+    body.page-exit{opacity:0;pointer-events:none}
+    .veil{position:fixed;inset:0;pointer-events:none;background:rgba(0,0,0,1);transition:opacity .42s cubic-bezier(.2,.9,.2,1);z-index:0}
+    body > *:not(.veil){position:relative;z-index:1}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="veil" aria-hidden="true"></div>
+  <header class="header container">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Elios" class="logo" width="36" height="36">Elios</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Projets</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="about.html" class="active">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 style="text-align:center">👤 À propos d’Elios</h1>
+    <section style="max-width:700px;margin:0 auto 2.5rem auto;text-align:center">
+      <div style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;align-items:center">
+        <div class="about-card" style="flex:1 1 260px;min-width:220px;max-width:340px;">
+          <div class="about-icon" style="font-size:2.2rem;margin-bottom:1rem;">👨‍💻</div>
+          <h2>Qui suis-je ?</h2>
+          <p style="font-size:1.08rem;margin-bottom:0.7rem"><strong>Fondateur de <span style='color:var(--accent)'>Elios</span></strong>, startup dédiée à la création de solutions numériques innovantes.</p>
+          <p style="color:var(--accent-2);font-size:1.01rem;">J’aide les entrepreneurs et associations à se doter d’outils numériques fiables, performants et sécurisés.</p>
+        </div>
+        <div class="about-card" style="flex:1 1 260px;min-width:220px;max-width:340px;">
+          <div class="about-icon" style="font-size:2.2rem;margin-bottom:1rem;">🌟</div>
+          <h2>Pourquoi me choisir ?</h2>
+          <ul style="text-align:left;margin:0 auto;max-width:260px;font-size:1.01rem;line-height:1.7">
+            <li>✔️ Écoute & conseils personnalisés</li>
+            <li>✔️ Solutions sur-mesure, pas de “copier-coller”</li>
+            <li>✔️ Respect des délais & transparence</li>
+            <li>✔️ Suivi après livraison</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-cards">
+      <div class="about-card">
+        <div class="about-icon">🎯</div>
+        <h2>Ma mission</h2>
+        <p style="margin-bottom:1.1rem">Aider les entrepreneurs à se doter d'outils numériques robustes et pratiques, sans complexités inutiles.</p>
+        <ul style="text-align:left;margin:0 auto;max-width:260px">
+          <li>• Conception centrée utilisateur</li>
+          <li>• Performances et SEO de base</li>
+          <li>• Solutions maintenables et évolutives</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">💡</div>
+        <h2>Valeurs & approche</h2>
+        <ul style="text-align:left;margin:0 auto;max-width:260px">
+          <li>• Transparence sur les prix et délais</li>
+          <li>• Communication claire et pédagogique</li>
+          <li>• Livrables testés et documentés</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🛠️</div>
+        <h2>Compétences</h2>
+        <p style="margin-bottom:0.7rem">Web : HTML/CSS/JS, intégration, optimisation<br>Logiciel : petits outils, scripts, automatisation, intégrations API.</p>
+      </div>
+    </div>
+
+    <section style="max-width:700px;margin:2.5rem auto 0 auto;text-align:center">
+      <h2 style="color:var(--accent);margin-bottom:1.2rem">Mon parcours</h2>
+      <div style="display:flex;flex-direction:column;gap:1.2rem;align-items:center;">
+        <div style="display:flex;align-items:center;gap:1rem;">
+          <span style="font-size:1.5rem;">🎓</span>
+          <span style="font-size:1.05rem;">BTS SIO SLAM — 2024-2026</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem;">
+          <span style="font-size:1.5rem;">💼</span>
+          <span style="font-size:1.05rem;">Stages en développement web & logiciel</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem;">
+          <span style="font-size:1.5rem;">🚀</span>
+          <span style="font-size:1.05rem;">Projets freelance et associatifs</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+    <div class="cols">
+      <div>
+        <h4>Contact</h4>
+          <p>Email: <a href="mailto:ekipppp006@gmail.com">ekipppp006@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <div class="links">
+          <a href="droits.html">Tous droits réservés</a>
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:1rem;color:var(--muted);font-size:.9rem;text-align:center;width:100%">&copy; 2026 Elios</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

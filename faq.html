@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — Elios | Questions fréquentes</title>
+  <meta name="description" content="Toutes les réponses aux questions fréquentes sur les services, délais, garanties, paiement, maintenance et accompagnement." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#071016}
+    html,body{height:100%;-webkit-font-smoothing:antialiased}
+    body{transition:opacity .42s cubic-bezier(.2,.9,.2,1);opacity:1}
+    body.page-exit{opacity:0;pointer-events:none}
+    .veil{position:fixed;inset:0;pointer-events:none;background:rgba(0,0,0,1);transition:opacity .42s cubic-bezier(.2,.9,.2,1);z-index:0}
+    body > *:not(.veil){position:relative;z-index:1}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="veil" aria-hidden="true"></div>
+  <header class="header container">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Elios" class="logo" width="36" height="36">Elios</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Projets</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 style="text-align:center">❓ FAQ</h1>
+    <div class="faq-cards">
+            <div class="faq-card">
+              <div class="faq-icon">🔄</div>
+              <h2>Comment se passe le suivi après livraison&nbsp;?</h2>
+              <p>Je reste disponible pour toute question, correction ou évolution. Un accompagnement personnalisé est proposé selon vos besoins.</p>
+            </div>
+      <div class="faq-card">
+        <div class="faq-icon">⏱️</div>
+        <h2>Quels sont les délais moyens ?</h2>
+        <p>Un site vitrine simple : 2 à 4 semaines. Un e-commerce ou un logiciel : 4 à 8 semaines selon la complexité.</p>
+      </div>
+      <div class="faq-card">
+        <div class="faq-icon">🛡️</div>
+        <h2>Y a-t-il une garantie ?</h2>
+        <p>Oui, chaque projet bénéficie d’une période de garantie et de corrections incluses après la mise en ligne.</p>
+      </div>
+      <div class="faq-card">
+        <div class="faq-icon">🔧</div>
+        <h2>Proposez-vous la maintenance ?</h2>
+        <p>La maintenance ponctuelle est possible sur demande, mais pas d’abonnement imposé.</p>
+      </div>
+      <div class="faq-card">
+        <div class="faq-icon">💳</div>
+        <h2>Comment se passe le paiement ?</h2>
+        <p>Un acompte à la commande, puis le solde à la livraison. Modalités précisées dans le devis.</p>
+      </div>
+      <div class="faq-card">
+        <div class="faq-icon">🏢</div>
+        <h2>Travaillez‑vous avec des grands comptes ?</h2>
+        <p>Oui — nous adaptons l'architecture, les NDA et les exigences de conformité.</p>
+      </div>
+      <div class="faq-card">
+        <div class="faq-icon">💳</div>
+        <h2>Offrez‑vous des paiements en ligne ?</h2>
+        <p>Oui — intégration Stripe et systèmes de facturation automatisés.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer container">
+    <div class="cols">
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:ekipppp006@gmail.com">ekipppp006@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <div class="links">
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="tarifs.html">Tarifs</a>
+          <a href="about.html">À propos</a>
+          <a href="mailto:ekipppp006@gmail.com">Contact</a>
+           <a href="droits.html">Tous droits réservés</a>
+           <a href="mentions-legales.html">Mentions légales</a>
+           <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:1rem;color:var(--muted);font-size:.9rem;text-align:center;width:100%">&copy; 2026 Elios</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
